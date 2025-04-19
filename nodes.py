@@ -9,7 +9,6 @@ import csv
 import json
 import math
 from pickle import NONE
-from telnetlib import OUTMRK
 import re
 
 # 第三方库
@@ -49,7 +48,9 @@ from math import ceil
 from .def_unit import *
 from .stack import Apply_ControlNetStack, Apply_LoRAStack
 
-
+# from https://github.com/blackberry/Python/blob/master/Python-3/Lib/telnetlib.py, now deprecated but without clear replacement.
+# may be unneeded, requires testing.
+OUTMRK = bytes([27])
 
 #region------------------------preset---------------------------------#
 
